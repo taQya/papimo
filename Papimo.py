@@ -69,7 +69,7 @@ class Papimo:
             soup = BeautifulSoup(response.text, "lxml")
             for machine in soup.find("ul", class_="sort").find_all("a"):
                 number_links.append(machine.get("href"))
-                print machine.get("href")
+                #print machine.get("href")
 
         return number_links
 
